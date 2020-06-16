@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace AirSystem
 {
-    public partial class frmSobre : Form
+    public partial class frmListarUsuario : Form
     {
-        public frmSobre()
+        public frmListarUsuario()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

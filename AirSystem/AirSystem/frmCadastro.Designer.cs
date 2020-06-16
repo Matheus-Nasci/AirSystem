@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -114,20 +115,25 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(146, 336);
+            this.button1.Location = new System.Drawing.Point(156, 336);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(325, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(616, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 198);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
@@ -137,6 +143,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "Deletar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -160,58 +167,73 @@
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox1.Location = new System.Drawing.Point(156, 28);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(120, 20);
             this.textBox1.TabIndex = 11;
+            this.textBox1.Text = "Digite seu nome...";
             // 
             // textBox2
             // 
+            this.textBox2.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox2.Location = new System.Drawing.Point(295, 28);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 20);
             this.textBox2.TabIndex = 12;
+            this.textBox2.Text = "Digite seu sobrenome...";
             // 
             // textBox3
             // 
+            this.textBox3.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox3.Location = new System.Drawing.Point(156, 77);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 20);
+            this.textBox3.Size = new System.Drawing.Size(202, 20);
             this.textBox3.TabIndex = 13;
+            this.textBox3.Text = "Digite seu endereço...";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(320, 77);
+            this.textBox4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox4.Location = new System.Drawing.Point(355, 77);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(40, 20);
             this.textBox4.TabIndex = 14;
+            this.textBox4.Text = "Nº";
             // 
             // textBox5
             // 
+            this.textBox5.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox5.Location = new System.Drawing.Point(156, 177);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 20);
+            this.textBox5.Size = new System.Drawing.Size(213, 20);
             this.textBox5.TabIndex = 15;
+            this.textBox5.Text = "Insira seu usuário...";
             // 
             // textBox6
             // 
+            this.textBox6.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox6.Location = new System.Drawing.Point(156, 225);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(120, 20);
+            this.textBox6.Size = new System.Drawing.Size(213, 20);
             this.textBox6.TabIndex = 16;
+            this.textBox6.Text = "Insira sua senha...";
             // 
             // textBox7
             // 
+            this.textBox7.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox7.Location = new System.Drawing.Point(156, 279);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(120, 20);
+            this.textBox7.Size = new System.Drawing.Size(213, 20);
             this.textBox7.TabIndex = 17;
+            this.textBox7.Text = "Confirme sua senha...";
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(156, 125);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(86, 20);
             this.dateTimePicker1.TabIndex = 18;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -220,6 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -231,7 +254,6 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

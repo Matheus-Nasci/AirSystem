@@ -19,3 +19,6 @@ C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirS
 C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.pdb
 C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.frmLogin.resources
 C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.frmCadastro.resources
+C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.frmAdmin.resources
+C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.frmListarUsuario.resources
+C:\Users\Matheus Nascimento\Desktop\AirSystem\AirSystem\AirSystem\obj\Debug\AirSystem.frmUsuario.resources

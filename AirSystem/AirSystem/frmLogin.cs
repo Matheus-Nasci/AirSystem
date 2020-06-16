@@ -69,12 +69,40 @@ namespace AirSystem
 
         private void HoraFechar_Tick(object sender, EventArgs e)
         {
-            
+            lblhora.Text = DateTime.Now.ToLongTimeString();
         }
 
         private void lblhora_Click(object sender, EventArgs e)
         { 
-            lblhora.Text = DateTime.Now.ToLongTimeString();
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "")
+            {
+                txtuser.Text = "USUARIO";
+                txtuser.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtuser_Enter(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "USUARIO")
+            {
+                txtuser.Text = "";
+                txtuser.ForeColor = Color.LightGray;
+            }
         }
     }
 }
