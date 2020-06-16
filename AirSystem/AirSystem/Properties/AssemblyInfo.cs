@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("AirSystem")]
+[assembly: AssemblyTitle("AirSystem - Form")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AirSystem")]
+[assembly: AssemblyProduct("AirSystem - Form")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // O GUID a seguir será destinado à ID de typelib se este projeto for exposto para COM
-[assembly: Guid("a11714a4-0262-4a46-a5a8-9ec42aacae5f")]
+[assembly: Guid("bff85064-b405-437e-986c-9493ed2d1e24")]
 
 // As informações da versão de um assembly consistem nos quatro valores a seguir:
 //

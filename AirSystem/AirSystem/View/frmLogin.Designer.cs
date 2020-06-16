@@ -42,8 +42,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblhora = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             HoraFechar = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // HoraFechar
@@ -54,42 +56,45 @@
             // btnlogin
             // 
             this.btnlogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnlogin.Location = new System.Drawing.Point(12, 380);
+            this.btnlogin.Location = new System.Drawing.Point(497, 383);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
             this.btnlogin.TabIndex = 0;
             this.btnlogin.Text = "Entrar";
             this.btnlogin.UseVisualStyleBackColor = true;
-            this.btnlogin.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnencerrar
             // 
             this.btnencerrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnencerrar.Location = new System.Drawing.Point(93, 380);
+            this.btnencerrar.Location = new System.Drawing.Point(578, 383);
             this.btnencerrar.Name = "btnencerrar";
             this.btnencerrar.Size = new System.Drawing.Size(75, 23);
             this.btnencerrar.TabIndex = 2;
             this.btnencerrar.Text = "Sair";
             this.btnencerrar.UseVisualStyleBackColor = true;
+            this.btnencerrar.Click += new System.EventHandler(this.btnencerrar_Click);
             // 
             // btncadastrar
             // 
             this.btncadastrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btncadastrar.Location = new System.Drawing.Point(203, 380);
+            this.btncadastrar.Location = new System.Drawing.Point(688, 383);
             this.btncadastrar.Name = "btncadastrar";
             this.btncadastrar.Size = new System.Drawing.Size(110, 23);
             this.btncadastrar.TabIndex = 3;
             this.btncadastrar.Text = "Novo Usuário";
             this.btncadastrar.UseVisualStyleBackColor = true;
+            this.btncadastrar.Click += new System.EventHandler(this.btncadastrar_Click);
             // 
             // txtpass
             // 
-            this.txtpass.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtpass.Location = new System.Drawing.Point(14, 282);
+            this.txtpass.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.txtpass.Location = new System.Drawing.Point(499, 285);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(299, 20);
             this.txtpass.TabIndex = 4;
             this.txtpass.Text = "Digite sua senha...";
+            this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
+            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
             // comboBox1
             // 
@@ -98,64 +103,60 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Inglês EN-US",
             "Português PT-BR"});
-            this.comboBox1.Location = new System.Drawing.Point(14, 341);
+            this.comboBox1.Location = new System.Drawing.Point(499, 344);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(210, 21);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "Selecione";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // txtuser
             // 
-            this.txtuser.AccessibleName = "";
+            this.txtuser.AccessibleName = "usuario";
             this.txtuser.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
-            this.txtuser.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtuser.Location = new System.Drawing.Point(14, 226);
+            this.txtuser.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.txtuser.Location = new System.Drawing.Point(499, 229);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(299, 20);
             this.txtuser.TabIndex = 6;
             this.txtuser.Text = "Digite seu usuário...";
-            this.txtuser.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
+            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(12, 210);
+            this.label1.Location = new System.Drawing.Point(497, 213);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Usuário";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(12, 266);
+            this.label2.Location = new System.Drawing.Point(497, 269);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Senha";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(12, 325);
+            this.label3.Location = new System.Drawing.Point(497, 328);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Idioma";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 62);
+            this.pictureBox2.Location = new System.Drawing.Point(500, 65);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(298, 128);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,19 +169,28 @@
             this.lblhora.BackColor = System.Drawing.SystemColors.Control;
             this.lblhora.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblhora.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblhora.Location = new System.Drawing.Point(232, 18);
+            this.lblhora.Location = new System.Drawing.Point(717, 21);
             this.lblhora.Name = "lblhora";
             this.lblhora.Size = new System.Drawing.Size(61, 24);
             this.lblhora.TabIndex = 13;
             this.lblhora.Text = "Hora ";
             this.lblhora.UseMnemonic = false;
-            this.lblhora.Click += new System.EventHandler(this.lblhora_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(459, 385);
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 425);
+            this.ClientSize = new System.Drawing.Size(810, 425);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblhora);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -195,8 +205,8 @@
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.Name = "frmLogin";
             this.Text = "Login - AirSystem";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +225,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblhora;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

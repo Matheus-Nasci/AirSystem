@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AirSystem.Properties
+namespace AirSystem___Form.Properties
 {
 
 
